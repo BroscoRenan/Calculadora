@@ -1,0 +1,76 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Basica
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double total = 0;
+            Console.Write("Informe o Primeiro Número : ");
+            double n1 = double.Parse(Console.ReadLine());
+            Console.Write("");
+            Console.Write("Informe o Segundo Número : ");
+            double n2 = double.Parse(Console.ReadLine());
+            Console.Write("");
+            Console.WriteLine("Informe a operação desejada: \n" +
+                          "[+] [-] [*] [/]: ");
+            string resp = Console.ReadLine();
+            switch (resp)
+            {
+                case "+":
+
+                    total = n1 + n2;
+
+                    Console.WriteLine("==============================");
+                    Console.Write("Você escolheu somar \n" +
+    
+                                "O resultado é: " + total.ToString());
+                    break;
+
+                case "-":
+
+                    total = n1 - n2;
+
+                    Console.WriteLine("==============================");
+                    Console.Write("Você escolheu subtrair \n" +
+    
+                                "O resultado é: " + total.ToString());
+                    break;
+
+                case "*":
+
+                    total = n1 * n2;
+
+                    Console.WriteLine("==============================");
+                    Console.Write("Você escolheu multiplicar \n" +
+    
+                                "O resultado é: " + total.ToString());
+                    break;
+
+                case "/":
+
+                    total = n1 / n2;
+
+                    Console.WriteLine("==============================");
+                    Console.Write("Você escolheu dividir \n" +
+    
+                                "O resultado é: " + total.ToString());
+                    break;
+
+
+                default:
+
+                    Console.WriteLine("==============================");
+                    Console.Write("Essa operaçãp não é válida");
+                    break;
+            }
+            Console.ReadKey();
+        }
+    }
+}
+
